@@ -1,0 +1,39 @@
+.container{
+    font-family: fantasy;
+    text-align: center;
+    box-sizing: border-box;
+    padding: none;
+}
+.header {
+    background-color: bisque ;
+    text-align: center;
+}
+.col{
+    float: left;
+    width: 24% ;
+    height: 400px;
+    margin-right: 10px;
+}
+.body{
+    text-align: center;
+    background-color: burlywood;
+}
+.body::after{
+    clear: both;
+    display: block;
+}
+.footer{
+    font-size: 30px;
+    text-align: center;
+    background-color: aquamarine;
+    display: block;
+    
+}
+@media screen and (max-width:600px){
+    .col{
+        width: 100%;
+    }
+    .body {
+        margin: 0px;
+    }
+}
